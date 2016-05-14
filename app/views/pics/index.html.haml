@@ -2,5 +2,5 @@
     #pics.transitions-enabled
         - @pics.each do |pic|
             .box.panel.panel-default    
-                = link_to(image_tag(pic.picture.url(:thumb).to_s))
+                = link_to(image_tag(pic.picture.url.to_s))
                 %h2= link_to pic.title, pic 
